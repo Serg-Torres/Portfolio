@@ -1,0 +1,45 @@
+/* Default dark theme */
+:root {
+    --background-color: #181818;
+    --text-color: #f0f0f0;
+    --card-background: #2a2a2a;
+    --link-color: #4CAF50;
+    --hover-background: #333;
+    --hover-shadow: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Vibrant theme */
+  .vibrant-theme {
+    --background-color: #ffeb3b;
+    --text-color: #212121;
+    --card-background: #ff9800;
+    --link-color: #03a9f4;
+    --hover-background: #f57c00;
+    --hover-shadow: rgba(0, 0, 0, 0.1);
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .portfolio-card {
+    background-color: var(--card-background);
+    color: var(--text-color);
+  }
+  
+  .portfolio-card:hover {
+    background-color: var(--hover-background);
+    box-shadow: 0px 4px 10px var(--hover-shadow);
+  }
+  
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--link-color);
+    text-decoration: underline;
+  }
+  

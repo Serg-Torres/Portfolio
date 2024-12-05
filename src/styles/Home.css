@@ -1,0 +1,65 @@
+/* Global dark theme */
+body {
+  background-color: #121212;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  color: #e0e0e0;
+}
+
+/* Collage layout */
+.collage-layout {
+  display: grid;
+  grid-template-areas:
+    "contact portfolio"
+    "resume projects"
+    "showreel showreel";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  height: 100vh;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Card styling */
+.collage-card {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #2d2d2d;
+  border-radius: 15px;
+  align-items: flex-start;
+  position: relative;
+  border: 3px solid #333; /* Border around the entire collage */
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.7s, opacity 0.3s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.collage-card:hover {
+  transform: scale(.95) !important;
+  opacity: 0.9;
+}
+
+/* Tab-like corner title styling connected to card edge */
+.card-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px 20px;
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px 8px 0 0; /* Gives it the tab-like appearance */
+  border: 1px solid #3a3a3a;
+  border-bottom: none; /* Seamlessly connect to card edge */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.card-link { 
+  display: block;
+  text-decoration: none;
+}
