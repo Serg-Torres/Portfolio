@@ -1,6 +1,4 @@
-* {
-    color: white !important;
-}
+
 
 .wrapper {
     display: flex;
@@ -56,6 +54,7 @@ footer {
     width: 100% !important;
     text-align: center;
     padding-top: 50px;
+    
 }
 
 .footer-col {
@@ -74,4 +73,8 @@ footer .ant-row .ant-col {
 
 .antIcon {
     font-size: 24px;
+}
+
+.footerText {
+    color: white;
 }

@@ -46,9 +46,6 @@ const Navbar = () => {
           <Menu.Item key="4">
             <a href="/projects">Projects</a>
           </Menu.Item>
-          <Menu.Item key="5">
-            <a href="/showreel">ShowReel</a>
-          </Menu.Item>
         </Menu>
       </Drawer>
     </div>

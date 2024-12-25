@@ -3,10 +3,9 @@
   display: grid;
   grid-template-areas:
     "contact portfolio"
-    "resume projects"
-    "showreel showreel";
+    "resume projects";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 10px;
   height: 100vh;
   padding: 10px;

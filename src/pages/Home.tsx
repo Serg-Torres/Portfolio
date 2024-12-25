@@ -55,12 +55,6 @@ const Home = () => {
             style: { gridArea: "projects", backgroundImage: `url(${Projects})` },
             link: "/projects",  // Add link path for the card
         },
-        {
-            key: "showreel",
-            title: "Showreel",
-            style: { gridArea: "showreel", backgroundImage: `url(${Showreel})` },
-            link: "/showreel",  // Add link path for the card
-        },
     ];
 
     return (

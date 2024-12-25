@@ -13,7 +13,7 @@ const Contact = () => {
         const templateID = 'template_9seu6cj';
         const userID = 'EMg1BA_f_Wy8wox4f';
 
-    
+
         if (!serviceID || !templateID || !userID) {
             console.error('Missing emailJS configuration in file');
             alert('configuration error. Please contact support');
@@ -29,7 +29,7 @@ const Contact = () => {
         }
 
         emailjs.send(serviceID, templateID, templateParams, userID)
-            .then((response)=> {
+            .then((response) => {
                 console.log('SUCCESS', response.status, response.text);
                 alert('Message has been sucessfully sent');
             })
@@ -117,22 +117,22 @@ const Contact = () => {
             {/* Contact Details */}
             <footer>
                 <Row gutter={[32, 32]} className='footer-row'>
-                    <Col xs={24} md={8} className = 'footer-col'>
+                    <Col xs={24} md={8} className='footer-col'>
                         <Space direction="vertical" size='middle'>
                             <PhoneOutlined className='antIcon' />
-                            <Title level={5}>Phone</Title>
-                            <Text>(407) 718-2397</Text>
+                            <Title className='footerText' level={5}>Phone</Title>
+                            <Text className='footerText'>(407) 718-2397</Text>
                         </Space>
                     </Col>
 
                     <Col xs={24} md={8}>
                     </Col>
 
-                    <Col xs={24} md={8} className = 'footer-col'>
+                    <Col xs={24} md={8} className='footer-col'>
                         <Space direction="vertical" size='middle'>
                             <MailOutlined className='antIcon' />
-                            <Title level={5}>Email</Title>
-                            <Text>sergiotorres.devop@gmail.com</Text>
+                            <Title className='footerText' level={5}>Email</Title>
+                            <Text className='footerText'>sergiotorres.devop@gmail.com</Text>
                         </Space>
                     </Col>
                 </Row>

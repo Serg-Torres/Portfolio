@@ -5,10 +5,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles/App.css'
 
 import App from './App'
-import HomePage from './pages/Home'
-import Portfolio from './pages/Portfolio'
-import Resume from './pages/Resume'
-import Contact from './pages/Contact'
+import HomePage from './pages/Home.tsx'
+import Portfolio from './pages/Portfolio.tsx'
+import Resume from './pages/Resume.tsx'
+import Contact from './pages/Contact.tsx'
+import Projects from './pages/Projects.tsx'
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,9 @@ const router = createBrowserRouter([
       }, {
         path: '/contact',
         element: <Contact />
+      }, {
+        path: '/projects',
+        element: <Projects />
       }
     ]
   }
