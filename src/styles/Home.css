@@ -2,8 +2,8 @@
 .collage-layout {
   display: grid;
   grid-template-areas:
-    "contact portfolio"
-    "resume projects";
+    "contact resume"
+    "projects projects";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;

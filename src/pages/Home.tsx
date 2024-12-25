@@ -37,12 +37,12 @@ const Home = () => {
             style: { gridArea: "contact", backgroundImage: `url(${Contact})` },
             link: "/contact",  // Add link path for the card
         },
-        {
-            key: "portfolio",
-            title: "Portfolio",
-            style: { gridArea: "portfolio", backgroundImage: `url(${Portfolio})` },
-            link: "/portfolio",  // Add link path for the card
-        },
+        // {
+        //     key: "portfolio",
+        //     title: "Portfolio",
+        //     style: { gridArea: "portfolio", backgroundImage: `url(${Portfolio})` },
+        //     link: "/portfolio",  // Add link path for the card
+        // },
         {
             key: "resume",
             title: "Resume",

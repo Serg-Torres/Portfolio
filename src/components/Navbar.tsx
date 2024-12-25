@@ -10,14 +10,35 @@ const Navbar = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
 
+  // Define menu items
+  const menuItems = [
+    {
+      key: '1',
+      label: <a href="/">Home</a>,
+    },
+    {
+      key: '2',
+      label: <a href="/portfolio">Portfolio</a>,
+    },
+    {
+      key: '3',
+      label: <a href="/resume">Resume</a>,
+    },
+    {
+      key: '4',
+      label: <a href="/projects">Projects</a>,
+    },
+  ];
+
   return (
-    <div className="navbar-container">
+    <div className="navbar-container dark-theme">
       {/* Left Section: Sandwich Button */}
       <div className="navbar-left">
         <Button
           type="text"
           icon={<MenuOutlined className="hamburger-icon" />}
           onClick={toggleDrawer}
+          className="drawer-toggle-button"
         />
       </div>
 
@@ -28,25 +49,12 @@ const Navbar = () => {
 
       {/* Drawer for Navigation */}
       <Drawer
-        title="Navigation"
         placement="left"
         onClose={toggleDrawer}
         open={isDrawerOpen}
+        className="navbar-drawer"
       >
-        <Menu mode="vertical">
-          <Menu.Item key="1">
-            <a href="/">Home</a>
-          </Menu.Item>
-          <Menu.Item key="2">
-            <a href="/portfolio">Portfolio</a>
-          </Menu.Item>
-          <Menu.Item key="3">
-            <a href="/resume">Resume</a>
-          </Menu.Item>
-          <Menu.Item key="4">
-            <a href="/projects">Projects</a>
-          </Menu.Item>
-        </Menu>
+        <Menu mode="vertical" theme="dark" items={menuItems} className="navbar-menu" />
       </Drawer>
     </div>
   );

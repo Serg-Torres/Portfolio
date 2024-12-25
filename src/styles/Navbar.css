@@ -4,49 +4,92 @@
   align-items: center;
   position: absolute;
   width: 100%;
-  height: 60px;
-  padding: 0 15px;
+  height: 64px;
+  padding: 0 20px;
   box-sizing: border-box;
   z-index: 10;
+
+
+  /* color: #ffffff; */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */
 }
 
-/* Left section: sandwich button container */
+
 .navbar-left {
   position: absolute;
   top: 15px;
   left: 15px;
-  background-color: #1f1f1f; /* Dark background */
+  background-color: #1f1f1f; 
   padding: 10px;
-  border-radius: 8px; /* Rounded corners for a modern look */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+
+
   display: flex;
   align-items: center;
 }
 
-/* Hamburger icon inside the container */
+
 .hamburger-icon {
   font-size: 20px;
-  color: #e0e0e0; /* Matches the overall theme */
+  color: #e0e0e0;
 }
 
-/* Right section: logo container */
-.navbar-right {
+
+.navbar-right .navbar-logo {
   position: absolute;
   top: 15px;
   right: 15px;
-  background-color: #1f1f1f; /* Dark background */
-  padding: 10px 20px; /* Additional padding for the logo */
+  background-color: #1f1f1f;
+  padding: 10px 20px;
   border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
+
+  
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: 1px;
+  transition: transform 0.7s, opacity 0.3s;
 }
 
-/* Logo styling */
-.navbar-logo {
-  font-size: 20px;
-  color: #e0e0e0; /* Modern text color */
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 1px; /* Slight letter-spacing for a sleek look */
+
+
+.navbar-right .navbar-logo:hover {
+  transform: scale(0.95);
+}
+
+/* Drawer */
+.navbar-drawer {
+  background-color: #1c1c1c !important;
+  color: white;
+}
+
+.anticon-close {
+  color: white;
+  font-size: x-large
+}
+
+.ant-menu-root {
+  background-color: #1c1c1c;
+}
+
+/* Menu */
+.navbar-menu .ant-menu-item {
+  color: #ffffff !important;
+  transition: transform 0.7s;
+  font-size: 23px;
+  padding: 20px;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar-menu .ant-menu-item:hover {
+  transform: scale(.95);
 }
