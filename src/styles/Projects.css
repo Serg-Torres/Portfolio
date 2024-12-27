@@ -1,0 +1,19 @@
+.projects-page {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f2f5; /* Light gray background */
+    min-height: 100vh;
+  }
+  
+  .project-card {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ant-collapse-header {
+    font-weight: bold;
+  }
+  
