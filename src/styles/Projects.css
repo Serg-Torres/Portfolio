@@ -3,8 +3,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f0f2f5; /* Light gray background */
+    background-color: black; /* Light gray background */
     min-height: 100vh;
+  }
+
+  .cardWrapper {
+    transition: transform 0.7s ease;
+  }
+
+  .cardWrapper:hover {
+    transform: scale(1.05);
+
+  }
+
+  .project-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .projectLink {
+    text-decoration: none;
+    color: #1890ff;
+    transition: transform 0.7s ease;
+    display: inline-block;
+  }
+
+  .projectLink:hover {
+    transform: scale(1.1);
   }
   
   .project-card {
@@ -15,5 +41,23 @@
   
   .ant-collapse-header {
     font-weight: bold;
+    font-size: 20px;
   }
+
+  .ant-card {
+    background-color: rgb(29, 20, 20);
+    color: white;
+  }
+
+  .ant-collapse-header-text, .ant-collapse-expand-icon, .ant-collapse-content-box {
+    color: white;
+  }
+
+  .ant-collapse-content-box {
+    font-size: 18px;
+  }
+
+
+
+
   
